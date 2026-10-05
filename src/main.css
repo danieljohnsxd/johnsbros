@@ -16,14 +16,14 @@
   --color-copper-700: #874316;
 
   /* Chrome green: secondary brand colour for dark sections and accents. */
-  --color-chrome-50: #eef3f0;
-  --color-chrome-100: #dbe6e0;
-  --color-chrome-300: #a3bcb0;
-  --color-chrome-500: #5f8273;
-  --color-chrome-700: #3a5348;
-  --color-chrome-800: #22322b;
-  --color-chrome-900: #151f1a;
-  --color-chrome-950: #0d1411;
+  --color-chrome-50: #eaf7f0;
+  --color-chrome-100: #cdeedd;
+  --color-chrome-300: #7fd0a8;
+  --color-chrome-500: #2a9d6c;
+  --color-chrome-700: #17694a;
+  --color-chrome-800: #10503a;
+  --color-chrome-900: #0b3d2c;
+  --color-chrome-950: #072a1f;
 
   --animate-marquee: marquee 40s linear infinite;
   @keyframes marquee {
@@ -62,7 +62,7 @@
 }
 
 @utility btn {
-  @apply inline-flex items-center justify-center gap-3 px-7 py-4 font-display text-base font-semibold tracking-wide uppercase transition-all duration-300;
+  @apply inline-flex items-center justify-center gap-3 px-7 py-4 whitespace-nowrap font-display text-base font-semibold tracking-wide uppercase transition-all duration-300;
 }
 
 @utility btn-primary {
