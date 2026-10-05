@@ -20,7 +20,7 @@ public/                  Files copied as-is (favicon, images/)
 - `npm run preview` builds and serves `dist/` through the Worker locally.
 - Pushing to `main` deploys automatically (Cloudflare Workers Builds). `npm run deploy` builds and deploys by hand.
 
-The contact form posts to `/api/contact`; the Worker emails it to info@johnsbros.com through Cloudflare Email Sending (`EMAIL` binding), with Reply-To set to the visitor.
+The contact form posts to `/api/contact`; the Worker emails it to doby@johnsbros.com, CC bethany@johnsbros.com, through Cloudflare Email Sending (`EMAIL` binding), with Reply-To set to the visitor.
 
 ## Photo credits
 

@@ -13,11 +13,11 @@
     "not_found_handling": "404-page",
     "run_worker_first": ["/api/*"]
   },
-  // Cloudflare Email Sending; the contact form only ever mails the office inbox.
+  // Cloudflare Email Sending; the contact form only ever mails these addresses.
   "send_email": [
     {
       "name": "EMAIL",
-      "allowed_destination_addresses": ["info@johnsbros.com"],
+      "allowed_destination_addresses": ["doby@johnsbros.com", "bethany@johnsbros.com"],
       "allowed_sender_addresses": ["website@johnsbros.com"]
     }
   ],

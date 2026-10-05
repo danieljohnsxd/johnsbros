@@ -1,7 +1,8 @@
 // Serves the static site and handles the contact form.
 // Static files are served before this script runs; only /api/* reaches it (see run_worker_first).
 
-const INBOX = "info@johnsbros.com";
+const TO = "doby@johnsbros.com";
+const CC = ["bethany@johnsbros.com"];
 const SENDER = { email: "website@johnsbros.com", name: "JohnsBros Website" };
 const LIMITS = { first: 100, last: 100, email: 254, phone: 40, message: 5000 };
 
@@ -45,7 +46,8 @@ async function handleContact(request, env) {
 
   try {
     await env.EMAIL.send({
-      to: INBOX,
+      to: TO,
+      cc: CC,
       from: SENDER,
       replyTo: { email: data.email, name },
       subject: `Website inquiry from ${name}`,
@@ -53,7 +55,7 @@ async function handleContact(request, env) {
     });
   } catch (err) {
     console.error("contact email failed", err?.code ?? "", err?.message ?? err);
-    return json({ error: `Sorry, that didn't go through. Please email ${INBOX} or call 713 553 9444.` }, 502);
+    return json({ error: `Sorry, that didn't go through. Please email ${TO} or call 713 553 9444.` }, 502);
   }
 
   return json({ ok: true });

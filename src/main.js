@@ -16,7 +16,7 @@ toggle?.addEventListener("click", () => {
   menu.classList.toggle("hidden", !open);
 });
 
-// Contact forms post to the Worker, which emails info@johnsbros.com.
+// Contact forms post to the Worker, which emails the team (see src/worker.js).
 for (const form of document.querySelectorAll("form[data-contact]")) {
   const button = form.querySelector("button");
   const status = form.querySelector("[data-status]");
