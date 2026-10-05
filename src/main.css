@@ -62,7 +62,7 @@
 }
 
 @utility btn {
-  @apply inline-flex items-center justify-center gap-3 px-7 py-4 whitespace-nowrap font-display text-base font-semibold tracking-wide uppercase transition-all duration-300;
+  @apply inline-flex items-center justify-center gap-3 px-7 py-4 text-center font-display sm:whitespace-nowrap text-base font-semibold tracking-wide uppercase transition-all duration-300;
 }
 
 @utility btn-primary {
