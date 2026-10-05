@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --color-copper: #b4601d;
+  --color-copper-dark: #6b3711;
+  --color-sage: #5c8170;
+  --color-pine: #22332b;
+  --color-paper: #f8f8f7;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-paper font-sans text-neutral-900 antialiased; }
+}
+
+@utility eyebrow {
+  @apply text-xs font-medium uppercase tracking-[0.14em];
+}
+
+@utility field {
+  @apply w-full border-0 border-b border-current/40 bg-transparent px-0 pt-1 pb-2 text-sm outline-none placeholder:text-current/50 focus:border-current;
+}

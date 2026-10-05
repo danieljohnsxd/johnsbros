@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head -->
+    <title>JohnsBros · Design &amp; Development for You</title>
+    <meta name="description" content="Houston design-build, construction and development firm. 25 years in business, 50 years of expertise across commercial, residential and civil projects." />
+  </head>
+  <body>
+    <!-- @include header -->
+
+    <main>
+      <!-- Hero + consultation form -->
+      <section class="bg-black text-white">
+        <div class="mx-auto max-w-7xl px-5 pt-16 pb-12 md:px-10 md:pt-20">
+          <p class="eyebrow">Building a better future with JohnsBros</p>
+          <h1 class="mt-6 max-w-2xl font-serif text-4xl leading-tight md:text-6xl">
+            Design &amp; Development: 25 Years in Business, 50 Years of Expertise.
+          </h1>
+        </div>
+        <div class="grid md:grid-cols-[3fr_4fr]">
+          <div class="hidden md:block"></div>
+          <div class="bg-copper px-5 py-10 md:px-10">
+            <p class="eyebrow">Schedule a consultation today</p>
+            <form data-contact class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
+              <label class="text-xs">First Name *<input name="first" required autocomplete="given-name" class="field mt-2" /></label>
+              <label class="text-xs">Last Name *<input name="last" required autocomplete="family-name" class="field mt-2" /></label>
+              <span class="hidden sm:block"></span>
+              <label class="text-xs">Email *<input name="email" type="email" required autocomplete="email" class="field mt-2" /></label>
+              <label class="text-xs">Phone *<input name="phone" type="tel" required autocomplete="tel" class="field mt-2" /></label>
+              <button class="border border-white/80 px-8 py-3 text-xs transition hover:bg-white hover:text-copper">Contact Us</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="bg-linear-to-br from-copper-dark via-copper to-copper-dark text-white">
+        <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 px-5 py-14 md:flex-row md:px-10 md:py-16">
+          <div>
+            <p class="eyebrow">Our Services</p>
+            <div class="mt-6"><!-- @include arrow --></div>
+          </div>
+          <h2 class="font-serif text-3xl leading-snug md:mr-24">Every Phase<br />of Every Project</h2>
+        </div>
+        <ul class="grid grid-cols-2 gap-px bg-white/20 text-center text-xs uppercase tracking-[0.12em] md:grid-cols-3">
+          <li class="flex min-h-36 items-center justify-center bg-linear-to-r from-sage to-pine px-6">Project Planning &amp; Management</li>
+          <li class="flex min-h-36 items-center justify-center bg-linear-to-r from-sage to-pine px-6">Architecture &amp; Engineering</li>
+          <li class="flex min-h-36 items-center justify-center bg-linear-to-r from-sage to-pine px-6">Construction &amp; Development</li>
+          <li class="flex min-h-36 items-center justify-center bg-linear-to-r from-sage to-pine px-6">Civil</li>
+          <li><a href="/commercial/" class="flex h-full min-h-36 items-center justify-center bg-linear-to-r from-sage to-pine px-6 hover:from-pine">Commercial</a></li>
+          <li><a href="/residential/" class="flex h-full min-h-36 items-center justify-center bg-linear-to-r from-sage to-pine px-6 hover:from-pine">Residential</a></li>
+        </ul>
+        <div class="flex justify-center py-8">
+          <a href="/design-build/" class="border border-white/80 px-10 py-3 text-xs transition hover:bg-white hover:text-copper">Read More</a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="bg-white">
+        <div class="mx-auto grid max-w-7xl gap-10 px-5 py-20 md:grid-cols-2 md:px-10 md:py-28">
+          <div class="md:pl-16">
+            <p class="eyebrow">About JohnsBros</p>
+            <div class="mt-6"><!-- @include arrow --></div>
+            <a href="/team/" class="mt-10 inline-block bg-copper px-8 py-3 text-xs text-white transition hover:bg-copper-dark">Meet The Team</a>
+          </div>
+          <p class="max-w-md font-serif text-2xl leading-snug">
+            At Johns Bros, we work with individuals, businesses, and organizations that value quality and professionalism. Our clients are our partners, and we strive to exceed their expectations in every project we undertake.
+          </p>
+        </div>
+      </section>
+
+      <!-- Clients -->
+      <section class="bg-black text-white">
+        <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 px-5 py-14 md:flex-row md:px-10 md:py-16">
+          <div>
+            <p class="eyebrow">Our Clients</p>
+            <div class="mt-6"><!-- @include arrow --></div>
+          </div>
+          <h2 class="font-serif text-3xl leading-snug md:mr-24">The Best People for the<br />Best Clients.</h2>
+        </div>
+      </section>
+      <!-- TODO: swap these wordmarks for the clients' logo files once we have them. -->
+      <ul class="grid grid-cols-2 gap-px bg-neutral-200 text-center md:grid-cols-3">
+        <li class="hidden bg-white md:block" aria-hidden="true"></li>
+        <li class="flex min-h-40 items-center justify-center bg-white px-6 font-serif text-2xl font-medium uppercase tracking-wide text-red-900">Bombshells</li>
+        <li class="flex min-h-40 flex-col items-center justify-center bg-white px-6">
+          <span class="text-3xl font-semibold tracking-wide text-sky-600">CADDIS</span>
+          <span class="text-[10px] tracking-[0.2em] text-neutral-500 uppercase">Healthcare Real Estate</span>
+        </li>
+        <li class="flex min-h-40 flex-col items-center justify-center bg-white px-6">
+          <span class="text-[10px] tracking-[0.3em] text-neutral-500 uppercase">City of</span>
+          <span class="text-xl font-semibold text-blue-950 uppercase">Rosenberg</span>
+          <span class="text-[10px] tracking-[0.3em] text-neutral-500 uppercase">Texas</span>
+        </li>
+        <li class="flex min-h-40 items-center justify-center bg-white px-6 font-serif text-xl text-neutral-900">Texas Children’s Hospital</li>
+        <li class="flex min-h-40 flex-col items-center justify-center bg-white px-6">
+          <span class="text-lg font-semibold tracking-widest text-blue-900 uppercase">Harris County</span>
+          <span class="text-[10px] tracking-[0.3em] text-red-700 uppercase">Texas</span>
+        </li>
+      </ul>
+    </main>
+
+    <!-- @include footer -->
+  </body>
+</html>
