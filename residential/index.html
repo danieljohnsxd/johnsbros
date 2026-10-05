@@ -8,59 +8,67 @@
   <body>
     <!-- @include header -->
 
-    <main>
-      <section class="bg-black text-white">
-        <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 md:grid-cols-2 md:px-10 md:py-20">
-          <div>
-            <p class="eyebrow">Residential</p>
-            <h1 class="mt-6 font-serif text-4xl leading-tight md:text-6xl">We Make Your<br />Dream a Home</h1>
-            <div class="mt-10"><!-- @include arrow --></div>
-          </div>
-          <p class="self-center text-sm leading-relaxed md:max-w-sm md:justify-self-end">
-            Residential Construction is a complex undertaking with many phases with many stakeholders involved. Our team has the experience and knowledge necessary to manage a variety of residential projects, along with any challenges that may arise during the construction.
+    <main id="main">
+      <section class="relative isolate overflow-hidden bg-chrome-900 text-white">
+        <img src="/images/residential-hero.webp" alt="" width="2200" height="1468" fetchpriority="high" class="absolute inset-0 -z-10 size-full object-cover" />
+        <div class="absolute inset-0 -z-10 bg-linear-to-r from-chrome-900/95 via-chrome-900/75 to-chrome-900/20"></div>
+        <div class="container-x py-20 md:py-28">
+          <p class="text-base font-semibold text-copper-300">Residential</p>
+          <h1 class="mt-4 max-w-3xl text-4xl font-semibold text-white md:text-6xl">We make your dream a home.</h1>
+          <p class="mt-6 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
+            Residential construction has many phases and many stakeholders. Our team has the experience to manage all of it, and any challenge that comes up along the way.
           </p>
+          <a href="/contact/" class="btn-primary mt-10">Talk to our team</a>
         </div>
       </section>
 
-      <section class="relative isolate bg-black text-white">
-        <img src="/images/residential-site-aerial.webp" alt="" loading="lazy" class="absolute inset-0 -z-10 h-full w-full object-cover opacity-45" />
-        <figure class="mx-auto max-w-3xl px-5 py-24 md:py-32">
-          <blockquote class="font-serif text-3xl leading-snug md:text-4xl">
+      <section class="py-20 md:py-28">
+        <div class="container-x">
+          <div class="max-w-2xl">
+            <p class="eyebrow">What we create</p>
+            <h2 class="mt-3 text-4xl font-semibold md:text-5xl">Modern, nostalgic, urban or rural</h2>
+            <p class="mt-5 text-lg leading-relaxed text-stone-600">Attention to detail and deep know-how bring your vision to life, whatever the style.</p>
+          </div>
+          <div class="mt-14 grid gap-12 lg:grid-cols-[2fr_3fr]">
+            <img src="/images/residential-porch.webp" alt="Newly built two-storey home with a covered front porch" width="1000" height="1296" loading="lazy" class="aspect-[4/5] w-full rounded-2xl object-cover" />
+            <ol class="grid gap-x-10 gap-y-12 sm:grid-cols-2">
+              <li>
+                <span class="font-display text-base font-semibold text-copper-600">01</span>
+                <h3 class="mt-2 text-2xl font-semibold">Custom homes</h3>
+                <p class="mt-3 text-base leading-relaxed text-stone-600">Homes crafted around your needs, blending personal design with practicality. We guide you from first design to final build.</p>
+              </li>
+              <li>
+                <span class="font-display text-base font-semibold text-copper-600">02</span>
+                <h3 class="mt-2 text-2xl font-semibold">Townhomes</h3>
+                <p class="mt-3 text-base leading-relaxed text-stone-600">Space-efficient, contemporary townhomes that balance privacy and convenience in a cohesive community.</p>
+              </li>
+              <li>
+                <span class="font-display text-base font-semibold text-copper-600">03</span>
+                <h3 class="mt-2 text-2xl font-semibold">Apartment buildings</h3>
+                <p class="mt-3 text-base leading-relaxed text-stone-600">Buildings up to four stories, with smart design, energy efficiency and top-notch amenities.</p>
+              </li>
+              <li>
+                <span class="font-display text-base font-semibold text-copper-600">04</span>
+                <h3 class="mt-2 text-2xl font-semibold">Multi-acre developments</h3>
+                <p class="mt-3 text-base leading-relaxed text-stone-600">Vibrant communities with green spaces and shared amenities, where residents can thrive, play and connect.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative isolate overflow-hidden text-white">
+        <img src="/images/residential-site-aerial.webp" alt="" width="1800" height="1013" loading="lazy" class="absolute inset-0 -z-10 size-full object-cover" />
+        <div class="absolute inset-0 -z-10 bg-chrome-900/85"></div>
+        <figure class="container-x max-w-4xl py-20 text-center md:py-28">
+          <blockquote class="font-display text-3xl leading-snug font-medium text-white md:text-4xl">
             “You can dream, create, design, and build the most wonderful place in the world. But it requires people to make the dream a reality.”
           </blockquote>
-          <figcaption class="eyebrow mt-8">Walt Disney</figcaption>
+          <figcaption class="mt-6 text-lg text-copper-300">Walt Disney</figcaption>
         </figure>
       </section>
 
-      <section class="grid bg-black text-white md:grid-cols-[1fr_2fr]">
-        <img src="/images/residential-porch.webp" alt="Newly built two-storey home with a covered front porch" width="1000" height="1296" loading="lazy" class="h-full min-h-72 w-full object-cover" />
-        <div class="px-5 py-16 md:px-12 md:py-20 xl:px-32">
-          <h2 class="font-serif text-4xl">What We Create</h2>
-          <p class="mt-4 max-w-lg text-sm font-medium">Our team’s attention to detail and knowledge brings to life our client’s vision - whether it be modern, nostalgic, urban, or rural.</p>
-          <ol class="mt-10 grid gap-10 sm:grid-cols-2">
-            <li>
-              <span class="font-serif text-2xl text-copper">01</span>
-              <h3 class="mt-3 text-sm font-medium">Custom</h3>
-              <p class="mt-4 text-sm leading-relaxed text-white/80">Our custom homes are crafted to meet your unique desires, blending personalized design with practicality. We guide you from initial design to final build, focusing on incorporating your style within every detail, ensuring your dream home comes to life with precision and personal touch.</p>
-            </li>
-            <li>
-              <span class="font-serif text-2xl text-copper">02</span>
-              <h3 class="mt-3 text-sm font-medium">Townhomes</h3>
-              <p class="mt-4 text-sm leading-relaxed text-white/80">Our townhome developments merge space efficiency with contemporary design, creating inviting communities. Designed for modern living, these homes offer a mix of privacy and convenience, making them ideal for those seeking a blend of luxury and practicality in a cohesive community setting.</p>
-            </li>
-            <li>
-              <span class="font-serif text-2xl text-copper">03</span>
-              <h3 class="mt-3 text-sm font-medium">Apartment Buildings<br />(up to 4 stories)</h3>
-              <p class="mt-4 text-sm leading-relaxed text-white/80">We develop apartment buildings that redefine urban living, focusing on smart design, energy efficiency, and top-notch amenities. Our projects aim to enhance cityscapes and provide residents with a lifestyle marked by luxury and convenience, setting new standards for apartment living.</p>
-            </li>
-            <li>
-              <span class="font-serif text-2xl text-copper">04</span>
-              <h3 class="mt-3 text-sm font-medium">Multi-Acre Residential Developments</h3>
-              <p class="mt-4 text-sm leading-relaxed text-white/80">Our multi-acre developments foster vibrant communities, emphasizing sustainable living, green spaces, and communal amenities. We design with a vision for a cohesive environment where residents can thrive, play, and connect, creating more than homes—building communities.</p>
-            </li>
-          </ol>
-        </div>
-      </section>
+      <!-- @include cta -->
     </main>
 
     <!-- @include footer -->
