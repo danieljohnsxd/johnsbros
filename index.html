@@ -3,168 +3,190 @@
   <head>
     <!-- @include head -->
     <title>JohnsBros · Design &amp; Development in Houston, Texas</title>
-    <meta name="description" content="Houston design-build, construction and development firm. 25 years in business and 50 years of expertise across commercial, residential and civil projects." />
+    <meta name="description" content="Houston design-build, engineering and construction firm. 25 years in business and 50 years of expertise across commercial, residential and civil projects." />
   </head>
   <body>
     <!-- @include header -->
 
     <main id="main">
       <!-- Hero -->
-      <section class="relative isolate overflow-hidden bg-chrome-900 text-white">
-        <img src="/images/home-hero.webp" alt="" width="2200" height="1467" fetchpriority="high" class="absolute inset-0 -z-10 size-full object-cover" />
-        <div class="absolute inset-0 -z-10 bg-linear-to-r from-chrome-900/95 via-chrome-900/75 to-chrome-900/20"></div>
-        <div class="container-x py-24 md:py-36">
-          <p class="text-base font-semibold text-copper-300">Design · Engineering · Construction</p>
-          <h1 class="mt-5 max-w-3xl text-5xl leading-[1.05] font-semibold text-white md:text-7xl">Building a better future across Texas.</h1>
-          <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">
-            One family-owned team for every phase of your project, from planning and design to the final walkthrough.
-          </p>
-          <div class="mt-10 flex flex-wrap gap-3">
-            <a href="/contact/" class="btn-primary">Schedule a consultation</a>
-            <a href="#services" class="btn-ghost">Explore our services</a>
+      <section data-hero class="relative isolate flex min-h-svh flex-col overflow-hidden bg-chrome-950 text-white">
+        <img src="/images/home-hero.webp" alt="" width="2200" height="1467" fetchpriority="high" class="absolute inset-0 -z-20 size-full object-cover" />
+        <div class="absolute inset-0 -z-10 bg-linear-to-t from-chrome-950/95 via-chrome-950/45 to-chrome-950/35"></div>
+        <div class="blueprint absolute inset-0 -z-10 opacity-40"></div>
+        <div class="absolute inset-x-0 top-0 -z-10 h-48 bg-linear-to-b from-chrome-950/70 to-transparent"></div>
+        <div class="container-x flex flex-1 flex-col justify-end pt-36 pb-10 md:pb-14">
+          <p class="eyebrow text-copper-300">Design · Engineering · Construction</p>
+          <h1 class="display mt-6 text-[clamp(3rem,min(10vw,15svh),10rem)] text-white">Building<br />a better<br /><span class="text-copper-400">future.</span></h1>
+          <div class="mt-12 grid gap-8 border-t border-white/25 pt-8 md:grid-cols-[1fr_1fr_auto] md:items-end">
+            <p class="max-w-md text-lg leading-relaxed text-white/85 md:text-xl">One family-owned team for every phase of your project, from planning to the final walkthrough.</p>
+            <dl class="flex gap-12">
+              <div>
+                <dt class="text-base text-white/70">Years in business</dt>
+                <dd class="display text-6xl text-white">25</dd>
+              </div>
+              <div>
+                <dt class="text-base text-white/70">Years of expertise</dt>
+                <dd class="display text-6xl text-copper-400">50</dd>
+              </div>
+            </dl>
+            <a href="/contact/" class="btn-primary">Start a project <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </section>
 
-      <!-- Proof points -->
-      <section aria-label="At a glance" class="border-b border-stone-200 bg-white">
-        <dl class="container-x grid grid-cols-2 gap-y-8 py-10 md:grid-cols-4">
-          <div>
-            <dt class="text-base text-stone-600">Years in business</dt>
-            <dd class="mt-1 font-display text-4xl font-semibold text-stone-950">25</dd>
-          </div>
-          <div>
-            <dt class="text-base text-stone-600">Years of expertise</dt>
-            <dd class="mt-1 font-display text-4xl font-semibold text-stone-950">50</dd>
-          </div>
-          <div>
-            <dt class="text-base text-stone-600">Sectors</dt>
-            <dd class="mt-1 font-display text-2xl font-semibold text-stone-950 md:text-3xl">Commercial, residential &amp; civil</dd>
-          </div>
-          <div>
-            <dt class="text-base text-stone-600">Based in</dt>
-            <dd class="mt-1 font-display text-2xl font-semibold text-stone-950 md:text-3xl">Houston, Texas</dd>
-          </div>
-        </dl>
+      <!-- Marquee -->
+      <div class="overflow-hidden bg-copper-600 py-5 text-white" aria-hidden="true">
+        <div class="animate-marquee flex w-max gap-10 font-display text-2xl font-bold whitespace-nowrap uppercase [font-stretch:118%] md:text-3xl">
+          <span>Project planning</span><span class="text-copper-300">✦</span><span>Architecture</span><span class="text-copper-300">✦</span><span>Engineering</span><span class="text-copper-300">✦</span><span>Construction</span><span class="text-copper-300">✦</span><span>Development</span><span class="text-copper-300">✦</span><span>Civil</span><span class="text-copper-300">✦</span>
+          <span>Project planning</span><span class="text-copper-300">✦</span><span>Architecture</span><span class="text-copper-300">✦</span><span>Engineering</span><span class="text-copper-300">✦</span><span>Construction</span><span class="text-copper-300">✦</span><span>Development</span><span class="text-copper-300">✦</span><span>Civil</span><span class="text-copper-300">✦</span>
+        </div>
+      </div>
+
+      <!-- Intro -->
+      <section class="py-24 md:py-36">
+        <div class="container-x reveal">
+          <p class="eyebrow">Who we are</p>
+          <p class="mt-10 max-w-6xl font-display text-[clamp(1.75rem,3.6vw,3.4rem)] leading-[1.15] font-semibold tracking-tight text-stone-950 [font-stretch:105%]">
+            A family-owned firm that brings <span class="text-copper-600">architects, engineers and builders</span> under one roof, so your project moves from first sketch to final walkthrough <span class="text-chrome-500">without anything lost in between.</span>
+          </p>
+          <a href="/team/" class="btn-outline-dark mt-12">Meet the team <span aria-hidden="true">→</span></a>
+        </div>
       </section>
 
       <!-- Services -->
-      <section id="services" class="scroll-mt-20 bg-stone-50 py-20 md:py-28">
-        <div class="container-x">
-          <div class="max-w-2xl">
-            <p class="eyebrow">What we do</p>
-            <h2 class="mt-3 text-4xl font-semibold md:text-5xl">Every phase of every project</h2>
-            <p class="mt-5 text-lg leading-relaxed text-stone-600">Architects, engineers, project managers and builders working as one team, so nothing gets lost between design and construction.</p>
+      <section id="services" class="scroll-mt-20 border-t border-stone-950/10">
+        <div class="container-x py-24 md:py-32">
+          <div class="reveal flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="eyebrow">What we do</p>
+              <h2 class="display mt-6 text-[clamp(2.5rem,6vw,5.5rem)]">Every phase.<br />Every project.</h2>
+            </div>
+            <p class="max-w-sm text-lg leading-relaxed text-stone-600">Six disciplines, one accountable team.</p>
           </div>
-          <ul class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <li class="rounded-2xl border border-stone-200 bg-white p-7">
-              <span class="grid size-12 place-items-center rounded-xl bg-copper-50 text-copper-600">
-                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2" /><path d="M3 9h18M8 2v4M16 2v4M8 14h3M8 17h6" /></svg>
-              </span>
-              <h3 class="mt-6 text-xl font-semibold">Project planning &amp; management</h3>
-              <p class="mt-3 text-base leading-relaxed text-stone-600">Budgets, schedules and regular updates that keep your project on time and on cost.</p>
+          <ol class="mt-16 border-t border-stone-950/15">
+            <li class="group border-b border-stone-950/15 grid gap-3 py-8 md:grid-cols-[5rem_1.3fr_1fr] md:items-center md:gap-8 md:py-10 lg:grid-cols-[5rem_1.3fr_1fr_16rem]">
+              <span class="font-display text-lg font-semibold text-copper-600">01</span>
+              <h3 class="display-sm text-3xl transition-colors group-hover:text-copper-600 md:text-5xl">Planning &amp; management</h3>
+              <p class="max-w-md text-lg text-stone-600">Budgets, schedules and regular updates that keep your project on time and on cost.</p>
+              <img src="/images/design-build-hero.webp" alt="" loading="lazy" class="hidden aspect-[3/2] w-full scale-90 object-cover opacity-0 transition duration-500 group-hover:scale-100 group-hover:opacity-100 lg:block" />
             </li>
-            <li class="rounded-2xl border border-stone-200 bg-white p-7">
-              <span class="grid size-12 place-items-center rounded-xl bg-copper-50 text-copper-600">
-                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01" /></svg>
-              </span>
-              <h3 class="mt-6 text-xl font-semibold">Architecture &amp; engineering</h3>
-              <p class="mt-3 text-base leading-relaxed text-stone-600">Design and structural engineering that is sound, safe and built around how you’ll use the space.</p>
+            <li class="group border-b border-stone-950/15 grid gap-3 py-8 md:grid-cols-[5rem_1.3fr_1fr] md:items-center md:gap-8 md:py-10 lg:grid-cols-[5rem_1.3fr_1fr_16rem]">
+              <span class="font-display text-lg font-semibold text-copper-600">02</span>
+              <h3 class="display-sm text-3xl transition-colors group-hover:text-copper-600 md:text-5xl">Architecture &amp; engineering</h3>
+              <p class="max-w-md text-lg text-stone-600">Structural design that is sound, safe and built around how you’ll use the space.</p>
+              <img src="/images/commercial-hero.webp" alt="" loading="lazy" class="hidden aspect-[3/2] w-full scale-90 object-cover opacity-0 transition duration-500 group-hover:scale-100 group-hover:opacity-100 lg:block" />
             </li>
-            <li class="rounded-2xl border border-stone-200 bg-white p-7">
-              <span class="grid size-12 place-items-center rounded-xl bg-copper-50 text-copper-600">
-                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 18h20v3H2zM4 18V9l8-6 8 6v9M10 18v-5h4v5" /></svg>
-              </span>
-              <h3 class="mt-6 text-xl font-semibold">Construction &amp; development</h3>
-              <p class="mt-3 text-base leading-relaxed text-stone-600">An in-house team and trusted subcontractors that take projects from groundbreaking to handover.</p>
+            <li class="group border-b border-stone-950/15 grid gap-3 py-8 md:grid-cols-[5rem_1.3fr_1fr] md:items-center md:gap-8 md:py-10 lg:grid-cols-[5rem_1.3fr_1fr_16rem]">
+              <span class="font-display text-lg font-semibold text-copper-600">03</span>
+              <h3 class="display-sm text-3xl transition-colors group-hover:text-copper-600 md:text-5xl">Construction &amp; development</h3>
+              <p class="max-w-md text-lg text-stone-600">An in-house crew and trusted subcontractors, from groundbreaking to handover.</p>
+              <img src="/images/home-hero.webp" alt="" loading="lazy" class="hidden aspect-[3/2] w-full scale-90 object-cover opacity-0 transition duration-500 group-hover:scale-100 group-hover:opacity-100 lg:block" />
             </li>
-            <li class="rounded-2xl border border-stone-200 bg-white p-7">
-              <span class="grid size-12 place-items-center rounded-xl bg-copper-50 text-copper-600">
-                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21 9 3M20 21 15 3M12 6v2M12 11v2M12 16v2" /></svg>
-              </span>
-              <h3 class="mt-6 text-xl font-semibold">Civil &amp; infrastructure</h3>
-              <p class="mt-3 text-base leading-relaxed text-stone-600">Roads, bridges, utilities and site work, including transport engineering and utility appraisal.</p>
+            <li class="group border-b border-stone-950/15 grid gap-3 py-8 md:grid-cols-[5rem_1.3fr_1fr] md:items-center md:gap-8 md:py-10 lg:grid-cols-[5rem_1.3fr_1fr_16rem]">
+              <span class="font-display text-lg font-semibold text-copper-600">04</span>
+              <h3 class="display-sm text-3xl transition-colors group-hover:text-copper-600 md:text-5xl">Civil &amp; infrastructure</h3>
+              <p class="max-w-md text-lg text-stone-600">Roads, bridges, utilities and site work, including utility appraisal.</p>
+              <img src="/images/residential-site-aerial.webp" alt="" loading="lazy" class="hidden aspect-[3/2] w-full scale-90 object-cover opacity-0 transition duration-500 group-hover:scale-100 group-hover:opacity-100 lg:block" />
             </li>
-            <li>
-              <a href="/commercial/" class="group block h-full rounded-2xl border border-stone-200 bg-white p-7 transition hover:border-copper-300 hover:shadow-lg">
-                <span class="grid size-12 place-items-center rounded-xl bg-chrome-50 text-chrome-700">
-                  <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="1" /><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01" /></svg>
-                </span>
-                <h3 class="mt-6 text-xl font-semibold">Commercial</h3>
-                <p class="mt-3 text-base leading-relaxed text-stone-600">Offices, restaurants, medical, hospitality, industrial and more.</p>
-                <span class="mt-5 inline-flex items-center gap-1 font-semibold text-copper-600">Commercial work <span aria-hidden="true" class="transition group-hover:translate-x-1">→</span></span>
+            <li class="group border-b border-stone-950/15">
+              <a href="/commercial/" class="grid gap-3 py-8 md:grid-cols-[5rem_1.3fr_1fr] md:items-center md:gap-8 md:py-10 lg:grid-cols-[5rem_1.3fr_1fr_16rem]">
+                <span class="font-display text-lg font-semibold text-copper-600">05</span>
+                <h3 class="display-sm text-3xl transition-colors group-hover:text-copper-600 md:text-5xl">Commercial <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-2">→</span></h3>
+                <p class="max-w-md text-lg text-stone-600">Offices, restaurants, medical, hospitality, industrial and more.</p>
+                <img src="/images/commercial-building.webp" alt="" loading="lazy" class="hidden aspect-[3/2] w-full scale-90 object-cover opacity-0 transition duration-500 group-hover:scale-100 group-hover:opacity-100 lg:block" />
               </a>
             </li>
-            <li>
-              <a href="/residential/" class="group block h-full rounded-2xl border border-stone-200 bg-white p-7 transition hover:border-copper-300 hover:shadow-lg">
-                <span class="grid size-12 place-items-center rounded-xl bg-chrome-50 text-chrome-700">
-                  <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21H3zM9 21v-6h6v6" /></svg>
-                </span>
-                <h3 class="mt-6 text-xl font-semibold">Residential</h3>
-                <p class="mt-3 text-base leading-relaxed text-stone-600">Custom homes, townhomes, apartments and multi-acre communities.</p>
-                <span class="mt-5 inline-flex items-center gap-1 font-semibold text-copper-600">Residential work <span aria-hidden="true" class="transition group-hover:translate-x-1">→</span></span>
+            <li class="group border-b border-stone-950/15">
+              <a href="/residential/" class="grid gap-3 py-8 md:grid-cols-[5rem_1.3fr_1fr] md:items-center md:gap-8 md:py-10 lg:grid-cols-[5rem_1.3fr_1fr_16rem]">
+                <span class="font-display text-lg font-semibold text-copper-600">06</span>
+                <h3 class="display-sm text-3xl transition-colors group-hover:text-copper-600 md:text-5xl">Residential <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-2">→</span></h3>
+                <p class="max-w-md text-lg text-stone-600">Custom homes, townhomes, apartments and multi-acre communities.</p>
+                <img src="/images/residential-hero.webp" alt="" loading="lazy" class="hidden aspect-[3/2] w-full scale-90 object-cover opacity-0 transition duration-500 group-hover:scale-100 group-hover:opacity-100 lg:block" />
               </a>
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
 
-      <!-- Design-build -->
-      <section class="py-20 md:py-28">
-        <div class="container-x grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          <img src="/images/design-build-house.webp" alt="Modern timber-clad home with a walkway across the lawn" width="1800" height="1062" loading="lazy" class="aspect-[4/3] w-full rounded-2xl object-cover" />
+      <!-- Sectors -->
+      <section class="grid md:grid-cols-2" aria-label="Sectors">
+        <a href="/commercial/" class="group relative isolate flex min-h-[70svh] items-end overflow-hidden p-8 text-white md:p-12">
+          <img src="/images/commercial-hero.webp" alt="" loading="lazy" class="absolute inset-0 -z-20 size-full object-cover transition duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 -z-10 bg-linear-to-t from-chrome-950/90 via-chrome-950/30 to-transparent"></div>
           <div>
-            <p class="eyebrow">Design-build</p>
-            <h2 class="mt-3 text-4xl font-semibold md:text-5xl">One team, start to finish</h2>
-            <p class="mt-5 text-lg leading-relaxed text-stone-600">
-              Our designers and contractors work together from day one, so you get a single plan that fits your schedule and budget, with less risk and fewer surprises.
-            </p>
-            <ul class="mt-8 space-y-4 text-lg">
-              <li class="flex gap-3"><svg class="mt-1 size-6 shrink-0 text-chrome-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7" /></svg>Lower risk and comparative cost savings</li>
-              <li class="flex gap-3"><svg class="mt-1 size-6 shrink-0 text-chrome-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7" /></svg>Fast-tracked schedules</li>
-              <li class="flex gap-3"><svg class="mt-1 size-6 shrink-0 text-chrome-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7" /></svg>One point of contact the whole way through</li>
-            </ul>
-            <a href="/design-build/" class="btn-primary mt-10">How design-build works</a>
+            <p class="eyebrow text-copper-300">Sector</p>
+            <h2 class="display mt-4 text-[clamp(2.5rem,5.5vw,5rem)] text-white">Commercial</h2>
+            <p class="mt-4 max-w-md text-lg text-white/85">Punctual and professional. Always.</p>
+            <span class="btn-outline-light mt-8">Explore commercial <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span></span>
           </div>
+        </a>
+        <a href="/residential/" class="group relative isolate flex min-h-[70svh] items-end overflow-hidden p-8 text-white md:p-12">
+          <img src="/images/residential-hero.webp" alt="" loading="lazy" class="absolute inset-0 -z-20 size-full object-cover transition duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 -z-10 bg-linear-to-t from-chrome-950/90 via-chrome-950/30 to-transparent"></div>
+          <div>
+            <p class="eyebrow text-copper-300">Sector</p>
+            <h2 class="display mt-4 text-[clamp(2.5rem,5.5vw,5rem)] text-white">Residential</h2>
+            <p class="mt-4 max-w-md text-lg text-white/85">We make your dream a home.</p>
+            <span class="btn-outline-light mt-8">Explore residential <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span></span>
+          </div>
+        </a>
+      </section>
+
+      <!-- Process -->
+      <section class="blueprint bg-chrome-900 text-white">
+        <div class="container-x py-24 md:py-32">
+          <div class="reveal grid gap-8 lg:grid-cols-2 lg:items-end">
+            <div>
+              <p class="eyebrow text-copper-300">Design-build</p>
+              <h2 class="display mt-6 text-[clamp(2.5rem,6vw,5.5rem)] text-white">One team.<br />Start to finish.</h2>
+            </div>
+            <p class="max-w-xl text-xl leading-relaxed text-chrome-100">Designers and contractors working together from day one means lower risk, comparative cost savings and fast-tracked schedules.</p>
+          </div>
+          <ol class="reveal mt-20 grid gap-px bg-white/15 sm:grid-cols-2 lg:grid-cols-5">
+            <li class="bg-chrome-900 p-8">
+              <span class="display text-5xl text-copper-400">01</span>
+              <h3 class="mt-8 font-display text-xl font-bold text-white uppercase [font-stretch:112%]">Consult</h3>
+              <p class="mt-3 text-base leading-relaxed text-chrome-100">We learn your goals, site, budget and timeline.</p>
+            </li>
+            <li class="bg-chrome-900 p-8">
+              <span class="display text-5xl text-copper-400">02</span>
+              <h3 class="mt-8 font-display text-xl font-bold text-white uppercase [font-stretch:112%]">Plan</h3>
+              <p class="mt-3 text-base leading-relaxed text-chrome-100">A single plan and schedule that fits what you need.</p>
+            </li>
+            <li class="bg-chrome-900 p-8">
+              <span class="display text-5xl text-copper-400">03</span>
+              <h3 class="mt-8 font-display text-xl font-bold text-white uppercase [font-stretch:112%]">Design</h3>
+              <p class="mt-3 text-base leading-relaxed text-chrome-100">Architecture and engineering, coordinated in-house.</p>
+            </li>
+            <li class="bg-chrome-900 p-8">
+              <span class="display text-5xl text-copper-400">04</span>
+              <h3 class="mt-8 font-display text-xl font-bold text-white uppercase [font-stretch:112%]">Build</h3>
+              <p class="mt-3 text-base leading-relaxed text-chrome-100">Our crew and subcontractors, managed and supervised.</p>
+            </li>
+            <li class="bg-chrome-900 p-8">
+              <span class="display text-5xl text-copper-400">05</span>
+              <h3 class="mt-8 font-display text-xl font-bold text-white uppercase [font-stretch:112%]">Deliver</h3>
+              <p class="mt-3 text-base leading-relaxed text-chrome-100">Quality-checked and handed over, ready to use.</p>
+            </li>
+          </ol>
+          <a href="/design-build/" class="btn-outline-light reveal mt-14">How design-build works <span aria-hidden="true">→</span></a>
         </div>
       </section>
 
       <!-- Clients -->
-      <section aria-labelledby="clients-heading" class="border-y border-stone-200 bg-stone-50 py-14">
+      <section aria-labelledby="clients-heading" class="overflow-hidden py-20 md:py-28">
         <div class="container-x">
-          <h2 id="clients-heading" class="text-center font-sans text-base font-medium text-stone-600">Trusted by public and private clients across Texas</h2>
-          <!-- TODO: swap these wordmarks for the clients' logo files once we have them. -->
-          <ul class="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6 text-xl font-semibold text-stone-500">
-            <li>Texas Children’s Hospital</li>
-            <li>Harris County</li>
-            <li>City of Rosenberg</li>
-            <li>CADDIS Healthcare Real Estate</li>
-            <li>Bombshells</li>
-          </ul>
+          <h2 id="clients-heading" class="eyebrow">Trusted by</h2>
         </div>
-      </section>
-
-      <!-- Values -->
-      <section class="py-20 md:py-28">
-        <div class="container-x grid gap-12 lg:grid-cols-[1fr_2fr]">
-          <div>
-            <p class="eyebrow">Why JohnsBros</p>
-            <h2 class="mt-3 text-4xl font-semibold md:text-5xl">Our clients are our partners</h2>
-            <a href="/team/" class="btn-primary mt-8">Meet the team</a>
-          </div>
-          <div class="grid gap-8 sm:grid-cols-3">
-            <div class="border-t-2 border-copper-500 pt-6">
-              <h3 class="text-xl font-semibold">Dedication</h3>
-              <p class="mt-3 text-base leading-relaxed text-stone-600">We take pride in our work and hold every project to the highest standard.</p>
-            </div>
-            <div class="border-t-2 border-copper-500 pt-6">
-              <h3 class="text-xl font-semibold">Integrity</h3>
-              <p class="mt-3 text-base leading-relaxed text-stone-600">Honest, transparent work that builds lasting relationships.</p>
-            </div>
-            <div class="border-t-2 border-copper-500 pt-6">
-              <h3 class="text-xl font-semibold">Customer focus</h3>
-              <p class="mt-3 text-base leading-relaxed text-stone-600">Every client is treated as an individual, not a number.</p>
-            </div>
+        <!-- TODO: swap these names for the clients' logo files once we have them. -->
+        <ul class="sr-only">
+          <li>Texas Children’s Hospital</li><li>Harris County</li><li>City of Rosenberg</li><li>CADDIS Healthcare Real Estate</li><li>Bombshells</li>
+        </ul>
+        <div class="mt-10 overflow-hidden" aria-hidden="true">
+          <div class="animate-marquee flex w-max gap-14 font-display text-4xl font-bold whitespace-nowrap text-stone-950 uppercase [animation-direction:reverse] [font-stretch:112%] md:text-6xl">
+            <span>Texas Children’s Hospital</span><span class="text-copper-500">✦</span><span>Harris County</span><span class="text-copper-500">✦</span><span>City of Rosenberg</span><span class="text-copper-500">✦</span><span>CADDIS Healthcare</span><span class="text-copper-500">✦</span><span>Bombshells</span><span class="text-copper-500">✦</span>
+            <span>Texas Children’s Hospital</span><span class="text-copper-500">✦</span><span>Harris County</span><span class="text-copper-500">✦</span><span>City of Rosenberg</span><span class="text-copper-500">✦</span><span>CADDIS Healthcare</span><span class="text-copper-500">✦</span><span>Bombshells</span><span class="text-copper-500">✦</span>
           </div>
         </div>
       </section>

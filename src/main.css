@@ -1,59 +1,98 @@
 @import "tailwindcss";
 
+@custom-variant solid (&:where([data-solid="true"], [data-solid="true"] *));
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Inter Tight", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Archivo", "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  /* Burnt orange: the primary brand colour. 600 is the button/CTA shade (AA with white text). */
+  /* Burnt orange: primary brand colour. 600 is the button shade (AA with white text). */
   --color-copper-50: #fbf3ec;
   --color-copper-100: #f5e2d2;
-  --color-copper-300: #e0a77c;
+  --color-copper-300: #e9a877;
+  --color-copper-400: #dd8a4e;
   --color-copper-500: #c0682b;
   --color-copper-600: #a6531c;
   --color-copper-700: #874316;
 
-  /* Chrome green: the secondary brand colour, used for dark sections and accents. */
+  /* Chrome green: secondary brand colour for dark sections and accents. */
   --color-chrome-50: #eef3f0;
   --color-chrome-100: #dbe6e0;
   --color-chrome-300: #a3bcb0;
   --color-chrome-500: #5f8273;
   --color-chrome-700: #3a5348;
-  --color-chrome-800: #26382f;
-  --color-chrome-900: #18251f;
+  --color-chrome-800: #22322b;
+  --color-chrome-900: #151f1a;
+  --color-chrome-950: #0d1411;
+
+  --animate-marquee: marquee 40s linear infinite;
+  @keyframes marquee {
+    to { transform: translateX(-50%); }
+  }
 }
 
 @layer base {
   html { scroll-behavior: smooth; }
-  body { @apply bg-white font-sans text-base text-stone-800 antialiased; }
-  h1, h2, h3 { @apply font-display tracking-tight text-balance text-stone-950; }
-  :focus-visible { @apply outline-2 outline-offset-2 outline-copper-500; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { @apply bg-[#f6f4f0] font-sans text-base text-stone-800 antialiased; }
+  h1, h2, h3 { @apply font-display text-balance text-stone-950; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-copper-400; }
+}
+
+/* Wide, heavy display lettering. */
+@utility display {
+  @apply font-display leading-[0.92] font-extrabold tracking-[-0.02em] uppercase;
+  font-stretch: 118%;
+}
+
+@utility display-sm {
+  @apply font-display leading-[1.02] font-bold tracking-[-0.01em];
+  font-stretch: 112%;
 }
 
 @utility eyebrow {
-  @apply text-sm font-semibold tracking-wide text-copper-600 uppercase;
+  @apply inline-flex items-center gap-3 font-display text-sm font-semibold tracking-[0.18em] text-copper-600 uppercase before:h-px before:w-8 before:bg-current;
+}
+
+/* Fine grid lines, like a construction drawing. */
+@utility blueprint {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
 }
 
 @utility btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-semibold transition-colors;
+  @apply inline-flex items-center justify-center gap-3 px-7 py-4 font-display text-base font-semibold tracking-wide uppercase transition-all duration-300;
 }
 
 @utility btn-primary {
   @apply btn bg-copper-600 text-white hover:bg-copper-700;
 }
 
-@utility btn-light {
-  @apply btn bg-white text-stone-950 hover:bg-copper-50;
+@utility btn-outline-light {
+  @apply btn text-white ring-1 ring-white/50 ring-inset hover:bg-white hover:text-chrome-950;
 }
 
-@utility btn-ghost {
-  @apply btn text-white ring-1 ring-white/60 ring-inset hover:bg-white/10;
+@utility btn-outline-dark {
+  @apply btn text-stone-950 ring-1 ring-stone-950/30 ring-inset hover:bg-stone-950 hover:text-white;
 }
 
 @utility field {
-  @apply mt-2 block w-full rounded-lg border border-stone-300 bg-white px-4 py-3 text-base text-stone-900 placeholder:text-stone-400 focus:border-copper-500 focus:ring-2 focus:ring-copper-500/30 focus:outline-none;
+  @apply mt-2 block w-full border-0 border-b-2 border-stone-300 bg-transparent px-0 py-3 text-lg text-stone-950 placeholder:text-stone-400 focus:border-copper-600 focus:ring-0 focus:outline-none;
 }
 
 @utility container-x {
-  @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  @apply mx-auto w-full max-w-[90rem] px-5 sm:px-8 lg:px-12;
+}
+
+/* Sections fade up as they scroll into view (see main.js). Without JS they simply show. */
+@layer components {
+  .js .reveal { opacity: 0; transform: translateY(2rem); transition: opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1); }
+  .js .reveal.is-visible { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .animate-marquee { animation: none !important; }
 }

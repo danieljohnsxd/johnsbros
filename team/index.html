@@ -3,87 +3,79 @@
   <head>
     <!-- @include head -->
     <title>Our Team · JohnsBros</title>
-    <meta name="description" content="Meet the family behind JohnsBros, a Houston design, construction and development firm with 50 years of expertise." />
+    <meta name="description" content="Meet the family behind JohnsBros, a Houston design, engineering and construction firm with 50 years of expertise." />
   </head>
   <body>
     <!-- @include header -->
 
     <main id="main">
-      <section class="relative isolate overflow-hidden bg-chrome-900 text-white">
-        <img src="/images/team-houston-skyline.webp" alt="" width="2000" height="1316" fetchpriority="high" class="absolute inset-0 -z-10 size-full object-cover" />
-        <div class="absolute inset-0 -z-10 bg-linear-to-r from-chrome-900/95 via-chrome-900/80 to-chrome-900/40"></div>
-        <div class="container-x py-20 md:py-28">
-          <p class="text-base font-semibold text-copper-300">Our team</p>
-          <h1 class="mt-4 max-w-3xl text-4xl font-semibold text-white md:text-6xl">A family business, built on 50 years of experience</h1>
-          <p class="mt-6 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
-            JohnsBros is a family-owned firm based in Texas. Our architects, engineers and managers share one commitment: integrity, performance and punctuality.
+      <section data-hero class="relative isolate flex min-h-[85svh] flex-col overflow-hidden bg-chrome-950 text-white">
+        <img src="/images/team-houston-skyline.webp" alt="" width="2000" height="1316" fetchpriority="high" class="absolute inset-0 -z-20 size-full object-cover" />
+        <div class="absolute inset-0 -z-10 bg-linear-to-t from-chrome-950 via-chrome-950/60 to-chrome-950/40"></div>
+        <div class="blueprint absolute inset-0 -z-10 opacity-60"></div>
+        <div class="container-x flex flex-1 flex-col justify-end pt-36 pb-14">
+          <p class="eyebrow text-copper-300">Our team</p>
+          <h1 class="display mt-6 text-[clamp(3rem,min(9vw,14svh),8.5rem)] text-white">A family<br />business. <span class="text-copper-400">50 years</span><br />in the making.</h1>
+          <p class="mt-10 max-w-2xl border-t border-white/25 pt-8 text-xl leading-relaxed text-white/85">
+            Family-owned and based in Texas. Our architects, engineers and managers share one commitment: integrity, performance and punctuality.
           </p>
         </div>
       </section>
 
-      <section class="py-20 md:py-28">
-        <div class="container-x grid gap-12 lg:grid-cols-2 lg:gap-20">
+      <section class="py-24 md:py-36">
+        <div class="container-x reveal grid gap-12 lg:grid-cols-[1fr_2fr]">
+          <p class="eyebrow self-start">Our mission</p>
           <div>
-            <p class="eyebrow">Our mission</p>
-            <h2 class="mt-3 text-3xl leading-snug font-semibold md:text-4xl">Exceptional design, construction and land development that meets each client’s needs, and then exceeds them.</h2>
-          </div>
-          <div class="space-y-5 text-lg leading-relaxed text-stone-600">
-            <p>We’re committed to delivering high-quality projects that are sustainable and innovative.</p>
-            <p>We build lasting relationships with our clients based on mutual trust and respect. Every project gets a collaborative, personal approach: we work closely with you to make sure your vision is brought to life.</p>
+            <p class="font-display text-[clamp(1.75rem,3.4vw,3.2rem)] leading-[1.15] font-semibold tracking-tight text-stone-950 [font-stretch:105%]">
+              Exceptional design, construction and land development that meets each client’s needs, <span class="text-copper-600">and then exceeds them.</span>
+            </p>
+            <p class="mt-10 max-w-2xl text-xl leading-relaxed text-stone-600">
+              We’re committed to sustainable, innovative, high-quality projects, and to lasting relationships built on mutual trust and respect. Every project gets a collaborative, personal approach.
+            </p>
           </div>
         </div>
       </section>
 
-      <section aria-labelledby="leadership" class="bg-stone-50 py-20 md:py-28">
+      <section aria-labelledby="leadership" class="border-t border-stone-950/10 py-24 md:py-32">
         <div class="container-x">
-          <p class="eyebrow">Leadership</p>
-          <h2 id="leadership" class="mt-3 text-4xl font-semibold md:text-5xl">The people behind the work</h2>
-          <div class="mt-14 grid gap-6 md:grid-cols-2">
-            <article class="rounded-2xl border border-stone-200 bg-white p-8">
-              <div class="flex items-center gap-4">
-                <span class="grid size-14 shrink-0 place-items-center rounded-full bg-copper-600 font-display text-lg font-semibold text-white" aria-hidden="true">DJ</span>
-                <div>
-                  <h3 class="text-2xl font-semibold">Doby Johns</h3>
-                  <p class="text-base font-medium text-copper-600">Founder &amp; President</p>
-                </div>
-              </div>
-              <p class="mt-6 text-base leading-relaxed text-stone-600">
-                With a lifelong career in construction, starting from landscaping at age 8 to leading multi-million dollar projects, Mr. Johns evolved his brother’s company into a top civil contractor and then a comprehensive construction provider for both residential and commercial sectors. His extensive hands-on knowledge covers all design and construction phases. As president, he oversees operations and has built a skilled in-house team and a network of dependable subcontractors.
+          <div class="reveal">
+            <p class="eyebrow">Leadership</p>
+            <h2 id="leadership" class="display mt-6 text-[clamp(2.5rem,6vw,5.5rem)]">The people<br />behind the work</h2>
+          </div>
+          <div class="mt-16 border-t border-stone-950/15">
+            <article class="reveal grid gap-6 border-b border-stone-950/15 py-12 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+              <header>
+                <p class="font-display text-base font-semibold tracking-[0.18em] text-copper-600 uppercase">Founder &amp; President</p>
+                <h3 class="display mt-3 text-[clamp(2.25rem,4.5vw,4rem)]">Doby Johns</h3>
+              </header>
+              <p class="text-lg leading-relaxed text-stone-700">
+                With a lifelong career in construction, starting from landscaping at age 8 to leading multi-million dollar projects, Mr. Johns evolved his brother’s company into a top civil contractor and then a comprehensive construction provider for both residential and commercial sectors. His hands-on knowledge covers every design and construction phase. As president, he oversees operations and has built a skilled in-house team and a network of dependable subcontractors.
               </p>
             </article>
-            <article class="rounded-2xl border border-stone-200 bg-white p-8">
-              <div class="flex items-center gap-4">
-                <span class="grid size-14 shrink-0 place-items-center rounded-full bg-chrome-700 font-display text-lg font-semibold text-white" aria-hidden="true">JJ</span>
-                <div>
-                  <h3 class="text-2xl font-semibold">Judah Johns</h3>
-                  <p class="text-base font-medium text-copper-600">Co-Founder</p>
-                </div>
-              </div>
-              <p class="mt-6 text-base leading-relaxed text-stone-600">
-                A distinguished go-to-market leader focused on business development and expansion into new markets. With nearly two decades of experience, including significant projects in the UK, Europe and Southeast Asia, he has been instrumental in driving strategic consultancy and support, facilitating significant revenue growth and market penetration.
+            <article class="reveal grid gap-6 border-b border-stone-950/15 py-12 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+              <header>
+                <p class="font-display text-base font-semibold tracking-[0.18em] text-copper-600 uppercase">Co-Founder</p>
+                <h3 class="display mt-3 text-[clamp(2.25rem,4.5vw,4rem)]">Judah Johns</h3>
+              </header>
+              <p class="text-lg leading-relaxed text-stone-700">
+                A go-to-market leader focused on business development and expansion into new markets. With nearly two decades of experience, including significant projects in the UK, Europe and Southeast Asia, he has been instrumental in driving strategic consultancy and support, facilitating significant revenue growth and market penetration.
               </p>
             </article>
-            <article class="rounded-2xl border border-stone-200 bg-white p-8">
-              <div class="flex items-center gap-4">
-                <span class="grid size-14 shrink-0 place-items-center rounded-full bg-chrome-700 font-display text-lg font-semibold text-white" aria-hidden="true">BJ</span>
-                <div>
-                  <h3 class="text-2xl font-semibold">Benjamin Johns</h3>
-                  <p class="text-base font-medium text-copper-600">Vice President</p>
-                </div>
-              </div>
-              <p class="mt-6 text-base leading-relaxed text-stone-600">
+            <article class="reveal grid gap-6 border-b border-stone-950/15 py-12 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+              <header>
+                <p class="font-display text-base font-semibold tracking-[0.18em] text-copper-600 uppercase">Vice President</p>
+                <h3 class="display mt-3 text-[clamp(2.25rem,4.5vw,4rem)]">Benjamin Johns</h3>
+              </header>
+              <p class="text-lg leading-relaxed text-stone-700">
                 Mr. Johns has been in the construction industry for over fifteen years. He uses that hands-on experience to run day-to-day operations and keep projects moving smoothly, including any commercial, legal or administrative issues that arise. He built that experience at large construction and engineering firms, both in Texas and internationally.
               </p>
             </article>
-            <article class="rounded-2xl border border-stone-200 bg-white p-8">
-              <div class="flex items-center gap-4">
-                <span class="grid size-14 shrink-0 place-items-center rounded-full bg-copper-600 font-display text-lg font-semibold text-white" aria-hidden="true">BR</span>
-                <div>
-                  <h3 class="text-2xl font-semibold">Bethany de Ruiter-Johns</h3>
-                  <p class="text-base font-medium text-copper-600">VP of Business Development</p>
-                </div>
-              </div>
-              <p class="mt-6 text-base leading-relaxed text-stone-600">
+            <article class="reveal grid gap-6 border-b border-stone-950/15 py-12 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+              <header>
+                <p class="font-display text-base font-semibold tracking-[0.18em] text-copper-600 uppercase">VP of Business Development</p>
+                <h3 class="display mt-3 text-[clamp(2.25rem,4.5vw,4rem)]">Bethany de Ruiter-Johns</h3>
+              </header>
+              <p class="text-lg leading-relaxed text-stone-700">
                 With over 15 years in business development, management and marketing, Mrs. de Ruiter-Johns is adept at fostering growth, enhancing operations and innovating to meet client needs. Her global experience helps her identify market trends and excel in client relations and team leadership. A Houston native, her expertise spans oil &amp; gas, logistics, engineering and the arts.
               </p>
             </article>
@@ -91,23 +83,23 @@
         </div>
       </section>
 
-      <section class="relative isolate overflow-hidden py-20 text-white md:py-28">
-        <img src="/images/team-bridge.webp" alt="" width="2000" height="1333" loading="lazy" class="absolute inset-0 -z-10 size-full object-cover" />
-        <div class="absolute inset-0 -z-10 bg-chrome-900/85"></div>
-        <div class="container-x">
-          <p class="text-base font-semibold text-copper-300">Our values</p>
-          <div class="mt-10 grid gap-10 md:grid-cols-3">
-            <div>
-              <h3 class="text-2xl font-semibold text-white">Dedication</h3>
-              <p class="mt-3 text-lg leading-relaxed text-chrome-100">We provide the highest level of service and quality, take pride in our work, and deliver projects that meet the highest standards.</p>
+      <section class="relative isolate overflow-hidden text-white">
+        <img src="/images/team-bridge.webp" alt="" width="2000" height="1333" loading="lazy" class="absolute inset-0 -z-20 size-full object-cover" />
+        <div class="absolute inset-0 -z-10 bg-chrome-950/85"></div>
+        <div class="container-x py-24 md:py-32">
+          <p class="eyebrow text-copper-300">What we stand for</p>
+          <div class="reveal mt-14 grid gap-px bg-white/15 md:grid-cols-3">
+            <div class="bg-chrome-950/70 p-8 md:p-10">
+              <h3 class="display text-4xl text-white">Dedication</h3>
+              <p class="mt-5 text-lg leading-relaxed text-chrome-100">The highest level of service and quality, and pride in every project we deliver.</p>
             </div>
-            <div>
-              <h3 class="text-2xl font-semibold text-white">Integrity</h3>
-              <p class="mt-3 text-lg leading-relaxed text-chrome-100">We conduct our business with honesty and transparency, and build lasting relationships based on mutual trust and respect.</p>
+            <div class="bg-chrome-950/70 p-8 md:p-10">
+              <h3 class="display text-4xl text-white">Integrity</h3>
+              <p class="mt-5 text-lg leading-relaxed text-chrome-100">Honesty and transparency, and relationships built on mutual trust and respect.</p>
             </div>
-            <div>
-              <h3 class="text-2xl font-semibold text-white">Customer focus</h3>
-              <p class="mt-3 text-lg leading-relaxed text-chrome-100">We treat each client as an individual rather than a number, and we’re committed to exceeding their expectations.</p>
+            <div class="bg-chrome-950/70 p-8 md:p-10">
+              <h3 class="display text-4xl text-white">Customer focus</h3>
+              <p class="mt-5 text-lg leading-relaxed text-chrome-100">Every client treated as an individual rather than a number, and expectations exceeded.</p>
             </div>
           </div>
         </div>

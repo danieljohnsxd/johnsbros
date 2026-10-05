@@ -9,53 +9,60 @@
     <!-- @include header -->
 
     <main id="main">
-      <section class="relative isolate overflow-hidden bg-chrome-900 text-white">
-        <img src="/images/commercial-hero.webp" alt="" width="2200" height="1531" fetchpriority="high" class="absolute inset-0 -z-10 size-full object-cover" />
-        <div class="absolute inset-0 -z-10 bg-linear-to-r from-chrome-900/95 via-chrome-900/80 to-chrome-900/30"></div>
-        <div class="container-x py-20 md:py-28">
-          <p class="text-base font-semibold text-copper-300">Commercial</p>
-          <h1 class="mt-4 max-w-3xl text-4xl font-semibold text-white md:text-6xl">Punctual and professional. Always.</h1>
-          <p class="mt-6 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
-            Architects, engineers and subcontractors working together on a plan built around the outcome you want.
-          </p>
-          <a href="/contact/" class="btn-primary mt-10">Discuss your project</a>
-        </div>
-      </section>
-
-      <section class="py-20 md:py-28">
-        <div class="container-x grid items-center gap-12 lg:grid-cols-[2fr_3fr] lg:gap-20">
-          <img src="/images/commercial-building.webp" alt="Orange building facade against a blue sky" width="1000" height="1500" loading="lazy" class="aspect-[4/5] w-full rounded-2xl object-cover" />
-          <div>
-            <p class="eyebrow">Our approach</p>
-            <h2 class="mt-3 text-4xl font-semibold md:text-5xl">A plan that fits your site, your rules and your business</h2>
-            <p class="mt-5 text-lg leading-relaxed text-stone-600">
-              Our commercial services cover a wide range of offerings. We take into account site size and location and every regulatory requirement, with an emphasis on excellence, to create a valuable space for your business to operate.
-            </p>
-            <p class="mt-4 text-lg leading-relaxed text-stone-600">
-              From renovations to large new builds, our team delivers top-quality service from start to finish.
-            </p>
+      <section data-hero class="relative isolate flex min-h-[85svh] flex-col overflow-hidden bg-chrome-950 text-white">
+        <img src="/images/commercial-hero.webp" alt="" width="2200" height="1531" fetchpriority="high" class="absolute inset-0 -z-20 size-full object-cover" />
+        <div class="absolute inset-0 -z-10 bg-linear-to-t from-chrome-950 via-chrome-950/60 to-chrome-950/35"></div>
+        <div class="blueprint absolute inset-0 -z-10 opacity-60"></div>
+        <div class="container-x flex flex-1 flex-col justify-end pt-36 pb-14">
+          <p class="eyebrow text-copper-300">Commercial</p>
+          <h1 class="display mt-6 text-[clamp(3rem,min(9.5vw,14svh),9rem)] text-white">Punctual.<br />Professional.<br /><span class="text-copper-400">Always.</span></h1>
+          <div class="mt-10 flex flex-col gap-8 border-t border-white/25 pt-8 md:flex-row md:items-end md:justify-between">
+            <p class="max-w-2xl text-xl leading-relaxed text-white/85">Architects, engineers and subcontractors working as one, on a plan built around the outcome you want.</p>
+            <a href="/contact/" class="btn-primary shrink-0">Discuss your project <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </section>
 
-      <section class="bg-stone-50 py-20 md:py-28">
+      <section class="py-24 md:py-36">
+        <div class="container-x grid items-center gap-14 lg:grid-cols-[2fr_3fr] lg:gap-24">
+          <img src="/images/commercial-building.webp" alt="Orange building facade against a blue sky" width="1000" height="1500" loading="lazy" class="reveal aspect-[4/5] w-full object-cover" />
+          <div class="reveal">
+            <p class="eyebrow">Our approach</p>
+            <h2 class="display mt-6 text-[clamp(2.5rem,5vw,4.5rem)]">Built for your site, your rules <span class="text-copper-600">and your business.</span></h2>
+            <p class="mt-8 text-xl leading-relaxed text-stone-600">We account for site size and location and every regulatory requirement, with an emphasis on excellence, to create a valuable space for your business to operate.</p>
+            <p class="mt-5 text-xl leading-relaxed text-stone-600">From renovations to large new builds, the same team stays with you from start to finish.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-stone-950/10 py-24 md:py-32">
         <div class="container-x">
-          <p class="eyebrow">What we build</p>
-          <h2 class="mt-3 text-4xl font-semibold md:text-5xl">Commercial projects</h2>
-          <ul class="mt-12 grid gap-4 text-lg font-medium sm:grid-cols-2 lg:grid-cols-4">
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Office buildings</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Office suite buildouts</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Restaurants</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Medical facilities</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Gas stations</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Convenience stores</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Hotels</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Apartments</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Industrial &amp; plant facilities</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Factories</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Warehouses</li>
-            <li class="rounded-xl border border-stone-200 bg-white px-6 py-5">Sports facilities</li>
+          <div class="reveal">
+            <p class="eyebrow">What we build</p>
+            <h2 class="display mt-6 text-[clamp(2.5rem,6vw,5.5rem)]">Commercial projects</h2>
+          </div>
+          <ul class="reveal mt-16 grid border-t border-l border-stone-950/15 sm:grid-cols-2 lg:grid-cols-4">
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">01</span>Office buildings</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">02</span>Office suite buildouts</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">03</span>Restaurants</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">04</span>Medical facilities</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">05</span>Gas stations</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">06</span>Convenience stores</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">07</span>Hotels</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">08</span>Apartments</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">09</span>Industrial &amp; plant facilities</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">10</span>Factories</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">11</span>Warehouses</li>
+            <li class="border-r border-b border-stone-950/15 p-6 font-display text-xl font-bold uppercase [font-stretch:110%] md:p-8"><span class="mb-6 block text-base text-copper-600">12</span>Sports facilities</li>
           </ul>
+        </div>
+      </section>
+
+      <section class="relative isolate flex min-h-[60svh] items-end overflow-hidden text-white">
+        <img src="/images/commercial-plaza.webp" alt="" width="1000" height="1500" loading="lazy" class="absolute inset-0 -z-20 size-full object-cover" />
+        <div class="absolute inset-0 -z-10 bg-linear-to-t from-chrome-950/90 to-chrome-950/20"></div>
+        <div class="container-x reveal py-16">
+          <p class="display max-w-5xl text-[clamp(2rem,4.5vw,4rem)] text-white">Spaces where business <span class="text-copper-400">gets done.</span></p>
         </div>
       </section>
 

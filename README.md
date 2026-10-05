@@ -35,7 +35,7 @@ Photos in `public/images/` are from Unsplash under the [Unsplash License](https:
 | `residential-porch.webp` | [Amanda Smith](https://unsplash.com/@asmithphotos) | https://unsplash.com/photos/_lfGDMDIJq0 |
 | `team-houston-skyline.webp` | [Adrian Newell](https://unsplash.com/@anewevisual) | https://unsplash.com/photos/Itn-olYoPAg |
 | `team-bridge.webp` | [Vitor Paladini](https://unsplash.com/@vtrpldn) | https://unsplash.com/photos/zfPksMTcWAA |
-| `home-hero.webp` | [Aron Fjell](https://unsplash.com/@addekalk) | https://unsplash.com/photos/wFso0QMuWAc |
+| `home-hero.webp` | [Salvador Rios](https://unsplash.com/@salvadorr) | https://unsplash.com/photos/3GdHDDtHJ-4 |
 | `design-build-hero.webp` | [Joe Holland](https://unsplash.com/@jos_holland111) | https://unsplash.com/photos/80zZ1s24Nag |
 | `commercial-hero.webp` | [m](https://unsplash.com/@brydoncreative) | https://unsplash.com/photos/GvPceVqbxm4 |
 | `residential-hero.webp` | [Brian Babb](https://unsplash.com/@brianbabb) | https://unsplash.com/photos/XbwHrt87mQ0 |

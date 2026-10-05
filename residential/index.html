@@ -9,48 +9,59 @@
     <!-- @include header -->
 
     <main id="main">
-      <section class="relative isolate overflow-hidden bg-chrome-900 text-white">
-        <img src="/images/residential-hero.webp" alt="" width="2200" height="1468" fetchpriority="high" class="absolute inset-0 -z-10 size-full object-cover" />
-        <div class="absolute inset-0 -z-10 bg-linear-to-r from-chrome-900/95 via-chrome-900/75 to-chrome-900/20"></div>
-        <div class="container-x py-20 md:py-28">
-          <p class="text-base font-semibold text-copper-300">Residential</p>
-          <h1 class="mt-4 max-w-3xl text-4xl font-semibold text-white md:text-6xl">We make your dream a home.</h1>
-          <p class="mt-6 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
-            Residential construction has many phases and many stakeholders. Our team has the experience to manage all of it, and any challenge that comes up along the way.
-          </p>
-          <a href="/contact/" class="btn-primary mt-10">Talk to our team</a>
+      <section data-hero class="relative isolate flex min-h-[85svh] flex-col overflow-hidden bg-chrome-950 text-white">
+        <img src="/images/residential-hero.webp" alt="" width="2200" height="1468" fetchpriority="high" class="absolute inset-0 -z-20 size-full object-cover" />
+        <div class="absolute inset-0 -z-10 bg-linear-to-t from-chrome-950 via-chrome-950/55 to-chrome-950/30"></div>
+        <div class="blueprint absolute inset-0 -z-10 opacity-60"></div>
+        <div class="container-x flex flex-1 flex-col justify-end pt-36 pb-14">
+          <p class="eyebrow text-copper-300">Residential</p>
+          <h1 class="display mt-6 text-[clamp(3rem,min(9.5vw,14svh),9rem)] text-white">We make<br />your dream<br /><span class="text-copper-400">a home.</span></h1>
+          <div class="mt-10 flex flex-col gap-8 border-t border-white/25 pt-8 md:flex-row md:items-end md:justify-between">
+            <p class="max-w-2xl text-xl leading-relaxed text-white/85">Residential construction has many phases and many stakeholders. We manage all of it, and every challenge along the way.</p>
+            <a href="/contact/" class="btn-primary shrink-0">Talk to our team <span aria-hidden="true">→</span></a>
+          </div>
         </div>
       </section>
 
-      <section class="py-20 md:py-28">
+      <section class="py-24 md:py-36">
         <div class="container-x">
-          <div class="max-w-2xl">
-            <p class="eyebrow">What we create</p>
-            <h2 class="mt-3 text-4xl font-semibold md:text-5xl">Modern, nostalgic, urban or rural</h2>
-            <p class="mt-5 text-lg leading-relaxed text-stone-600">Attention to detail and deep know-how bring your vision to life, whatever the style.</p>
+          <div class="reveal flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="eyebrow">What we create</p>
+              <h2 class="display mt-6 text-[clamp(2.5rem,6vw,5.5rem)]">Modern. Nostalgic.<br /><span class="text-copper-600">Urban. Rural.</span></h2>
+            </div>
+            <p class="max-w-sm text-xl leading-relaxed text-stone-600">Attention to detail and deep know-how, whatever your style.</p>
           </div>
-          <div class="mt-14 grid gap-12 lg:grid-cols-[2fr_3fr]">
-            <img src="/images/residential-porch.webp" alt="Newly built two-storey home with a covered front porch" width="1000" height="1296" loading="lazy" class="aspect-[4/5] w-full rounded-2xl object-cover" />
-            <ol class="grid gap-x-10 gap-y-12 sm:grid-cols-2">
-              <li>
-                <span class="font-display text-base font-semibold text-copper-600">01</span>
-                <h3 class="mt-2 text-2xl font-semibold">Custom homes</h3>
-                <p class="mt-3 text-base leading-relaxed text-stone-600">Homes crafted around your needs, blending personal design with practicality. We guide you from first design to final build.</p>
+          <div class="mt-16 grid gap-14 lg:grid-cols-[2fr_3fr] lg:gap-20">
+            <img src="/images/residential-porch.webp" alt="Newly built two-storey home with a covered front porch" width="1000" height="1296" loading="lazy" class="reveal aspect-[4/5] w-full object-cover" />
+            <ol class="reveal border-t border-stone-950/15">
+              <li class="grid gap-3 border-b border-stone-950/15 py-8 sm:grid-cols-[4rem_1fr]">
+                <span class="font-display text-lg font-semibold text-copper-600">01</span>
+                <div>
+                  <h3 class="display-sm text-3xl md:text-4xl">Custom homes</h3>
+                  <p class="mt-3 text-lg leading-relaxed text-stone-600">Crafted around how you live, blending personal design with practicality. We guide you from first design to final build.</p>
+                </div>
               </li>
-              <li>
-                <span class="font-display text-base font-semibold text-copper-600">02</span>
-                <h3 class="mt-2 text-2xl font-semibold">Townhomes</h3>
-                <p class="mt-3 text-base leading-relaxed text-stone-600">Space-efficient, contemporary townhomes that balance privacy and convenience in a cohesive community.</p>
+              <li class="grid gap-3 border-b border-stone-950/15 py-8 sm:grid-cols-[4rem_1fr]">
+                <span class="font-display text-lg font-semibold text-copper-600">02</span>
+                <div>
+                  <h3 class="display-sm text-3xl md:text-4xl">Townhomes</h3>
+                  <p class="mt-3 text-lg leading-relaxed text-stone-600">Space-efficient, contemporary homes that balance privacy and convenience in a cohesive community.</p>
+                </div>
               </li>
-              <li>
-                <span class="font-display text-base font-semibold text-copper-600">03</span>
-                <h3 class="mt-2 text-2xl font-semibold">Apartment buildings</h3>
-                <p class="mt-3 text-base leading-relaxed text-stone-600">Buildings up to four stories, with smart design, energy efficiency and top-notch amenities.</p>
+              <li class="grid gap-3 border-b border-stone-950/15 py-8 sm:grid-cols-[4rem_1fr]">
+                <span class="font-display text-lg font-semibold text-copper-600">03</span>
+                <div>
+                  <h3 class="display-sm text-3xl md:text-4xl">Apartment buildings</h3>
+                  <p class="mt-3 text-lg leading-relaxed text-stone-600">Up to four stories, with smart design, energy efficiency and top-notch amenities.</p>
+                </div>
               </li>
-              <li>
-                <span class="font-display text-base font-semibold text-copper-600">04</span>
-                <h3 class="mt-2 text-2xl font-semibold">Multi-acre developments</h3>
-                <p class="mt-3 text-base leading-relaxed text-stone-600">Vibrant communities with green spaces and shared amenities, where residents can thrive, play and connect.</p>
+              <li class="grid gap-3 border-b border-stone-950/15 py-8 sm:grid-cols-[4rem_1fr]">
+                <span class="font-display text-lg font-semibold text-copper-600">04</span>
+                <div>
+                  <h3 class="display-sm text-3xl md:text-4xl">Multi-acre developments</h3>
+                  <p class="mt-3 text-lg leading-relaxed text-stone-600">Vibrant communities with green space and shared amenities, where residents can thrive, play and connect.</p>
+                </div>
               </li>
             </ol>
           </div>
@@ -58,13 +69,13 @@
       </section>
 
       <section class="relative isolate overflow-hidden text-white">
-        <img src="/images/residential-site-aerial.webp" alt="" width="1800" height="1013" loading="lazy" class="absolute inset-0 -z-10 size-full object-cover" />
-        <div class="absolute inset-0 -z-10 bg-chrome-900/85"></div>
-        <figure class="container-x max-w-4xl py-20 text-center md:py-28">
-          <blockquote class="font-display text-3xl leading-snug font-medium text-white md:text-4xl">
-            “You can dream, create, design, and build the most wonderful place in the world. But it requires people to make the dream a reality.”
+        <img src="/images/residential-site-aerial.webp" alt="" width="1800" height="1013" loading="lazy" class="absolute inset-0 -z-20 size-full object-cover" />
+        <div class="absolute inset-0 -z-10 bg-chrome-950/85"></div>
+        <figure class="container-x reveal py-24 md:py-36">
+          <blockquote class="display max-w-6xl text-[clamp(2rem,4.6vw,4.25rem)] text-white">
+            “You can dream, create, design, and build the most wonderful place in the world. <span class="text-copper-400">But it requires people to make the dream a reality.”</span>
           </blockquote>
-          <figcaption class="mt-6 text-lg text-copper-300">Walt Disney</figcaption>
+          <figcaption class="eyebrow mt-10 text-copper-300">Walt Disney</figcaption>
         </figure>
       </section>
 

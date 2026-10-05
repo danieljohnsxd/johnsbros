@@ -7,16 +7,45 @@ for (const link of document.querySelectorAll("[data-nav] a")) {
   if (target === here) link.setAttribute("aria-current", "page");
 }
 
-// Mobile menu.
+// The header sits transparent over photo heroes and turns solid once you scroll (or on pages without a hero).
+const header = document.querySelector("[data-header]");
+const hasHero = Boolean(document.querySelector("[data-hero]"));
 const toggle = document.querySelector("[data-menu-toggle]");
 const menu = document.querySelector("[data-menu]");
+const updateHeader = () => {
+  const menuOpen = toggle?.getAttribute("aria-expanded") === "true";
+  header.dataset.solid = String(!hasHero || menuOpen || scrollY > 24);
+};
+updateHeader();
+addEventListener("scroll", updateHeader, { passive: true });
+
+// Mobile menu.
 toggle?.addEventListener("click", () => {
   const open = toggle.getAttribute("aria-expanded") !== "true";
   toggle.setAttribute("aria-expanded", String(open));
   menu.classList.toggle("hidden", !open);
+  updateHeader();
 });
 
-// Contact forms post to the Worker, which emails the team (see src/worker.js).
+// Fade sections up as they come into view.
+const reveals = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    },
+    { rootMargin: "0px 0px -10% 0px" },
+  );
+  reveals.forEach((el) => observer.observe(el));
+} else {
+  reveals.forEach((el) => el.classList.add("is-visible"));
+}
+
+// Contact form posts to the Worker, which emails the team (see src/worker.js).
 for (const form of document.querySelectorAll("form[data-contact]")) {
   const button = form.querySelector("button");
   const status = form.querySelector("[data-status]");
@@ -31,7 +60,7 @@ for (const form of document.querySelectorAll("form[data-contact]")) {
       form.reset();
       status.textContent = "Thanks, we got your message and will be in touch soon.";
     } catch (err) {
-      status.textContent = err.message || "Sorry, that didn't go through. Please email info@johnsbros.com or call 713 553 9444.";
+      status.textContent = err.message || "Sorry, that didn't go through. Please call us on 713 553 9444.";
     } finally {
       button.disabled = false;
     }

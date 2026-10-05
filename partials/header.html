@@ -1,35 +1,32 @@
-<a href="#main" class="sr-only z-[60] rounded-full bg-copper-600 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3">Skip to content</a>
-<header class="sticky top-0 z-50 border-b border-stone-200 bg-white/95 backdrop-blur">
-  <div class="container-x flex h-18 items-center justify-between gap-6">
-    <a href="/" class="flex items-center gap-3" aria-label="JohnsBros home">
-      <span class="grid size-10 place-items-center rounded-lg bg-chrome-800 font-display text-base font-bold text-copper-300">JB</span>
-      <span class="leading-tight">
-        <span class="block font-display text-xl font-bold text-stone-950">JohnsBros</span>
-        <span class="block text-sm text-stone-600">Design &amp; Development</span>
-      </span>
+<a href="#main" class="sr-only z-[60] bg-copper-600 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3">Skip to content</a>
+<header data-header data-solid="false" class="fixed inset-x-0 top-0 z-50 text-white transition-[background-color,color,border-color] duration-300 solid:border-b solid:border-stone-950/10 solid:bg-[#f6f4f0] solid:text-stone-950">
+  <div class="container-x flex h-20 items-center justify-between gap-6">
+    <a href="/" class="leading-none" aria-label="JohnsBros home">
+      <span class="block font-display text-2xl font-extrabold tracking-tight uppercase [font-stretch:118%]">Johns<span class="text-copper-500">Bros</span></span>
+      <span class="mt-1.5 block font-display text-xs font-semibold tracking-[0.22em] uppercase opacity-80">Design &amp; Development</span>
     </a>
     <nav data-nav class="hidden lg:block" aria-label="Main">
-      <ul class="flex items-center gap-1 text-base font-medium">
-        <li><a href="/team/" class="rounded-full px-4 py-2 text-stone-700 hover:bg-stone-100 hover:text-stone-950 aria-[current=page]:bg-chrome-50 aria-[current=page]:text-chrome-800">Team</a></li>
-        <li><a href="/design-build/" class="rounded-full px-4 py-2 text-stone-700 hover:bg-stone-100 hover:text-stone-950 aria-[current=page]:bg-chrome-50 aria-[current=page]:text-chrome-800">Design-Build</a></li>
-        <li><a href="/commercial/" class="rounded-full px-4 py-2 text-stone-700 hover:bg-stone-100 hover:text-stone-950 aria-[current=page]:bg-chrome-50 aria-[current=page]:text-chrome-800">Commercial</a></li>
-        <li><a href="/residential/" class="rounded-full px-4 py-2 text-stone-700 hover:bg-stone-100 hover:text-stone-950 aria-[current=page]:bg-chrome-50 aria-[current=page]:text-chrome-800">Residential</a></li>
+      <ul class="flex items-center gap-9 font-display text-sm font-semibold tracking-[0.12em] uppercase">
+        <li><a href="/team/" class="relative py-2 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-copper-500 after:transition-transform hover:after:scale-x-100 aria-[current=page]:after:scale-x-100">Team</a></li>
+        <li><a href="/design-build/" class="relative py-2 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-copper-500 after:transition-transform hover:after:scale-x-100 aria-[current=page]:after:scale-x-100">Design-Build</a></li>
+        <li><a href="/commercial/" class="relative py-2 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-copper-500 after:transition-transform hover:after:scale-x-100 aria-[current=page]:after:scale-x-100">Commercial</a></li>
+        <li><a href="/residential/" class="relative py-2 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-copper-500 after:transition-transform hover:after:scale-x-100 aria-[current=page]:after:scale-x-100">Residential</a></li>
       </ul>
     </nav>
-    <a href="/contact/" class="btn-primary hidden lg:inline-flex">Get in touch</a>
-    <button data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" class="-mr-2 grid size-11 place-items-center rounded-full hover:bg-stone-100 lg:hidden">
+    <a href="/contact/" class="btn-primary hidden px-6 py-3 text-sm lg:inline-flex">Start a project</a>
+    <button data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" class="-mr-2 grid size-12 place-items-center lg:hidden">
       <span class="sr-only">Menu</span>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h18M3 16h18" /></svg>
     </button>
   </div>
-  <nav id="mobile-menu" data-menu data-nav class="hidden border-t border-stone-200 lg:hidden" aria-label="Main">
-    <ul class="container-x flex flex-col py-3 text-lg font-medium">
+  <nav id="mobile-menu" data-menu data-nav class="hidden border-t border-stone-950/10 lg:hidden" aria-label="Main">
+    <ul class="container-x flex flex-col py-4 font-display text-2xl font-bold uppercase [font-stretch:112%]">
       <li><a href="/" class="block py-3 aria-[current=page]:text-copper-600">Home</a></li>
       <li><a href="/team/" class="block py-3 aria-[current=page]:text-copper-600">Team</a></li>
       <li><a href="/design-build/" class="block py-3 aria-[current=page]:text-copper-600">Design-Build</a></li>
       <li><a href="/commercial/" class="block py-3 aria-[current=page]:text-copper-600">Commercial</a></li>
       <li><a href="/residential/" class="block py-3 aria-[current=page]:text-copper-600">Residential</a></li>
-      <li class="pt-3 pb-2"><a href="/contact/" class="btn-primary w-full">Get in touch</a></li>
+      <li class="pt-4 pb-2"><a href="/contact/" class="btn-primary w-full">Start a project</a></li>
     </ul>
   </nav>
 </header>
