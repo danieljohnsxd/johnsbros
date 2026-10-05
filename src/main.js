@@ -16,19 +16,25 @@ toggle?.addEventListener("click", () => {
   menu.classList.toggle("hidden", !open);
 });
 
-// The site is static, so contact forms open a pre-filled email to the office.
+// Contact forms post to the Worker, which emails info@johnsbros.com.
 for (const form of document.querySelectorAll("form[data-contact]")) {
-  form.addEventListener("submit", (event) => {
+  const button = form.querySelector("button");
+  const status = form.querySelector("[data-status]");
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const data = new FormData(form);
-    const name = `${data.get("first")} ${data.get("last")}`.trim();
-    const body = [
-      `Name: ${name}`,
-      `Email: ${data.get("email")}`,
-      `Phone: ${data.get("phone")}`,
-      data.get("message") ? `\n${data.get("message")}` : "",
-    ].join("\n");
-    location.href = `mailto:info@johnsbros.com?subject=${encodeURIComponent(`Inquiry from ${name}`)}&body=${encodeURIComponent(body)}`;
+    button.disabled = true;
+    status.textContent = "Sending…";
+    try {
+      const res = await fetch("/api/contact", { method: "POST", body: new FormData(form) });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(body.error);
+      form.reset();
+      status.textContent = "Thanks, we got your message and will be in touch soon.";
+    } catch (err) {
+      status.textContent = err.message || "Sorry, that didn't go through. Please email info@johnsbros.com or call 713 553 9444.";
+    } finally {
+      button.disabled = false;
+    }
   });
 }
 

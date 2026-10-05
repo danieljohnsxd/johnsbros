@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head -->
+    <title>Contact · JohnsBros</title>
+    <meta name="description" content="Schedule a consultation or ask JohnsBros a question about your commercial, residential or civil project." />
+  </head>
+  <body>
+    <!-- @include header -->
+
+    <main>
+      <section class="bg-black text-white">
+        <div class="mx-auto max-w-7xl px-5 py-16 md:px-10 md:py-20">
+          <p class="eyebrow">Contact Us</p>
+          <h1 class="mt-6 font-serif text-4xl leading-tight md:text-6xl">Reach out with any<br />questions or inquiries</h1>
+        </div>
+      </section>
+
+      <section class="bg-white">
+        <div class="mx-auto grid max-w-7xl gap-14 px-5 py-16 md:grid-cols-[2fr_1fr] md:px-10 md:py-20">
+          <form data-contact class="grid max-w-2xl gap-x-8 gap-y-8 sm:grid-cols-2">
+            <input name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden" />
+            <p class="eyebrow text-copper sm:col-span-2">Schedule a consultation today</p>
+            <label class="text-xs">First Name *<input name="first" required autocomplete="given-name" class="field mt-2" /></label>
+            <label class="text-xs">Last Name *<input name="last" required autocomplete="family-name" class="field mt-2" /></label>
+            <label class="text-xs">Email *<input name="email" type="email" required autocomplete="email" class="field mt-2" /></label>
+            <label class="text-xs">Phone *<input name="phone" type="tel" required autocomplete="tel" class="field mt-2" /></label>
+            <label class="text-xs sm:col-span-2">Tell us about your project<textarea name="message" rows="5" class="field mt-2 resize-none"></textarea></label>
+            <div class="flex flex-wrap items-center gap-6 sm:col-span-2">
+              <button class="w-40 bg-copper py-4 text-sm text-white transition hover:bg-copper-dark disabled:opacity-60">Submit</button>
+              <p data-status role="status" class="text-sm text-neutral-700"></p>
+            </div>
+          </form>
+          <div class="space-y-8 text-sm">
+            <div>
+              <p class="eyebrow">Address</p>
+              <p class="mt-2 text-neutral-700">PO BOX 16206<br />Houston, TX 77222</p>
+            </div>
+            <div>
+              <p class="eyebrow">Phone</p>
+              <a href="tel:+17135539444" class="mt-2 block text-neutral-700 hover:text-copper">713 553 9444</a>
+            </div>
+            <div>
+              <p class="eyebrow">Email</p>
+              <a href="mailto:info@johnsbros.com" class="mt-2 block text-neutral-700 hover:text-copper">info@johnsbros.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include footer -->
+  </body>
+</html>

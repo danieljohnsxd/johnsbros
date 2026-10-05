@@ -9,7 +9,7 @@
     <!-- @include header -->
 
     <main>
-      <!-- Hero + consultation form -->
+      <!-- Hero + consultation call to action -->
       <section class="bg-black text-white">
         <div class="mx-auto max-w-7xl px-5 pt-16 pb-12 md:px-10 md:pt-20">
           <p class="eyebrow">Building a better future with JohnsBros</p>
@@ -21,14 +21,10 @@
           <div class="hidden md:block"></div>
           <div class="bg-copper px-5 py-10 md:px-10">
             <p class="eyebrow">Schedule a consultation today</p>
-            <form data-contact class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
-              <label class="text-xs">First Name *<input name="first" required autocomplete="given-name" class="field mt-2" /></label>
-              <label class="text-xs">Last Name *<input name="last" required autocomplete="family-name" class="field mt-2" /></label>
-              <span class="hidden sm:block"></span>
-              <label class="text-xs">Email *<input name="email" type="email" required autocomplete="email" class="field mt-2" /></label>
-              <label class="text-xs">Phone *<input name="phone" type="tel" required autocomplete="tel" class="field mt-2" /></label>
-              <button class="border border-white/80 px-8 py-3 text-xs transition hover:bg-white hover:text-copper">Contact Us</button>
-            </form>
+            <div class="mt-6 flex flex-wrap items-center justify-between gap-6">
+              <p class="max-w-sm font-serif text-2xl leading-snug">Tell us about your project and we’ll be in touch.</p>
+              <a href="/contact/" class="border border-white/80 px-8 py-3 text-xs transition hover:bg-white hover:text-copper">Contact Us</a>
+            </div>
           </div>
         </div>
       </section>

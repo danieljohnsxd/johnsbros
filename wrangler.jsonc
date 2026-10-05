@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "johnsbros",
+  "main": "src/worker.js",
   "compatibility_date": "2026-10-05",
   // Runs before every `wrangler deploy`, including Cloudflare's Git builds.
   "build": {
@@ -8,8 +9,19 @@
   },
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
   },
+  // Cloudflare Email Sending; the contact form only ever mails the office inbox.
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "allowed_destination_addresses": ["info@johnsbros.com"],
+      "allowed_sender_addresses": ["website@johnsbros.com"]
+    }
+  ],
+  "observability": { "enabled": true },
   "routes": [
     { "pattern": "johnsbros.com", "custom_domain": true },
     { "pattern": "www.johnsbros.com", "custom_domain": true }

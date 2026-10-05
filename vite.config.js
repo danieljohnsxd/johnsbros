@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 
 const root = import.meta.dirname;
-const pages = ["index", "team/index", "design-build/index", "commercial/index", "residential/index", "404"];
+const pages = ["index", "team/index", "design-build/index", "commercial/index", "residential/index", "contact/index", "404"];
 
 // Swaps `<!-- @include name -->` for partials/name.html so pages share one header and footer.
 const includePartials = {
